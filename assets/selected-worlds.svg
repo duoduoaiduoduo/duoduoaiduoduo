@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Three selected worlds by Gemos</title>
+  <desc id="desc">Three animated dark cards represent Gemos Still, Sharp-TD Bridge, and GemosDodo.art.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111A46"/><stop offset="1" stop-color="#171133"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFD4A7"/><stop offset="1" stop-color="#FF714B"/></linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EBCFF"/><stop offset="1" stop-color="#E799EE"/></linearGradient>
+    <linearGradient id="site" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EC4D9A"/><stop offset="1" stop-color="#FF9A4E"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <style>
+    @keyframes bob { 50% { transform: translateY(-7px); } }
+    @keyframes pulse { 50% { opacity: .35; transform: scale(1.25); } }
+    @keyframes stream { to { stroke-dashoffset: -30; } }
+    .float { animation: bob 5s ease-in-out infinite; }
+    .dot { transform-origin: center; animation: pulse 3s ease-in-out infinite; }
+    .dot:nth-of-type(2n) { animation-delay: -1.3s; }
+    .signal { stroke-dasharray: 5 10; animation: stream 2.5s linear infinite; }
+    @media (prefers-reduced-motion: reduce) { .float,.dot,.signal { animation: none; } }
+  </style>
+  <rect x="1" y="1" width="378" height="258" rx="20" fill="url(#card)" stroke="#48547D" stroke-width="2"/>
+  <rect x="411" y="1" width="378" height="258" rx="20" fill="url(#card)" stroke="#48547D" stroke-width="2"/>
+  <rect x="821" y="1" width="378" height="258" rx="20" fill="url(#card)" stroke="#48547D" stroke-width="2"/>
+
+  <text x="24" y="35" fill="#FE9A73" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3">01 / MEMORY</text>
+  <circle cx="189" cy="110" r="72" fill="#DC73ED" opacity=".14" filter="url(#blur)"/>
+  <g class="float">
+    <path d="M129 73l60-26 62 25-62 25Z" fill="#F3EAFB" fill-opacity=".13" stroke="#E9DDFD" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M129 73l60 24v76l-60-25Z" fill="#9DB5FF" fill-opacity=".18" stroke="#A9C3FF" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M189 97l62-25v75l-62 26Z" fill="#FF9DA3" fill-opacity=".19" stroke="#FFE1D4" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M140 134c20-12 34-10 49 5 20-18 39-16 51-3v19l-51 21-49-20Z" fill="url(#cool)" opacity=".94"/>
+    <circle class="dot" cx="160" cy="118" r="3" fill="#FFFFFF"/>
+    <circle class="dot" cx="205" cy="118" r="4" fill="#FFDFEC"/>
+    <circle class="dot" cx="225" cy="103" r="2.5" fill="#B9D9FF"/>
+  </g>
+  <text x="24" y="222" fill="#F5F1FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Gemos Still</text>
+  <text x="24" y="244" fill="#B4BED9" font-family="Arial, Helvetica, sans-serif" font-size="13">Keep a moment inside a little world.</text>
+
+  <text x="434" y="35" fill="#A9C4FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3">02 / IMAGE TO 3D</text>
+  <g class="float">
+    <rect x="461" y="72" width="103" height="101" rx="9" fill="#172858" stroke="#91B5F7" stroke-width="2"/>
+    <circle cx="518" cy="105" r="17" fill="url(#warm)"/>
+    <path d="M473 153l27-30 20 19 21-21 12 16v26h-80Z" fill="#7763B4"/>
+    <path d="M585 121h73" fill="none" stroke="#C6D1FF" stroke-width="2" stroke-opacity=".3"/>
+    <path class="signal" d="M585 121h73" fill="none" stroke="#FCB083" stroke-width="3"/>
+    <path d="M652 115l10 6-10 6" fill="none" stroke="#FFD5A7" stroke-width="2"/>
+    <circle class="dot" cx="705" cy="82" r="3" fill="#B9D3FF"/>
+    <circle class="dot" cx="723" cy="94" r="4" fill="#FFB2CA"/>
+    <circle class="dot" cx="688" cy="108" r="3" fill="#A8B9FF"/>
+    <circle class="dot" cx="737" cy="117" r="5" fill="#FFAB8B"/>
+    <circle class="dot" cx="692" cy="140" r="4" fill="#EFC0FF"/>
+    <circle class="dot" cx="720" cy="156" r="3" fill="#BAD9FF"/>
+    <circle class="dot" cx="746" cy="146" r="3" fill="#FFD3AD"/>
+    <path d="M705 82l18 12-35 14 49 9-45 23 28 16 26-10" fill="none" stroke="#A9BCFF" stroke-opacity=".5"/>
+  </g>
+  <text x="434" y="222" fill="#F5F1FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Sharp-TD Bridge</text>
+  <text x="434" y="244" fill="#B4BED9" font-family="Arial, Helvetica, sans-serif" font-size="13">A photo becomes a Gaussian world.</text>
+
+  <text x="844" y="35" fill="#FFA58D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3">03 / CREATIVE SPACE</text>
+  <g class="float">
+    <rect x="863" y="63" width="294" height="115" rx="11" fill="#182658" stroke="#8598D8" stroke-width="2"/>
+    <path d="M863 85h294" stroke="#8F9DCC" stroke-opacity=".65"/>
+    <circle cx="879" cy="74" r="3" fill="#FF8C7B"/><circle cx="891" cy="74" r="3" fill="#FFCA88"/><circle cx="903" cy="74" r="3" fill="#9CD4C1"/>
+    <circle cx="1082" cy="116" r="39" fill="#F65F72" opacity=".4" filter="url(#blur)"/>
+    <circle cx="1082" cy="116" r="28" fill="url(#warm)"/>
+    <path d="M865 158c47-43 83-37 111-23s61 22 94-4 57-31 85-18v64H865Z" fill="#3E3B93" opacity=".75"/>
+    <path d="M865 173c50-14 91-25 132-15s94-31 159-21" fill="none" stroke="url(#site)" stroke-width="4"/>
+    <circle class="dot" cx="960" cy="105" r="3" fill="#FFFFFF"/><circle class="dot" cx="1013" cy="112" r="2" fill="#FFD5DD"/>
+  </g>
+  <text x="844" y="222" fill="#F5F1FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">GemosDodo.art</text>
+  <text x="844" y="244" fill="#B4BED9" font-family="Arial, Helvetica, sans-serif" font-size="13">A home for everything still becoming.</text>
+</svg>

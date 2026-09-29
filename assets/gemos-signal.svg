@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">GemosDodo — a creative signal</title>
+  <desc id="desc">An animated indigo, coral and magenta banner. A glass memory cube floats inside moving orbital rings beside the words Hello, I'm Gemos.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080D28"/>
+      <stop offset=".53" stop-color="#14205B"/>
+      <stop offset="1" stop-color="#2A1457"/>
+    </linearGradient>
+    <radialGradient id="coralGlow">
+      <stop stop-color="#FF783D" stop-opacity=".78"/>
+      <stop offset=".32" stop-color="#EA287F" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#EA287F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow">
+      <stop stop-color="#6686FF" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#6686FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headline" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".72" stop-color="#F5E7F9"/>
+      <stop offset="1" stop-color="#FFAB78"/>
+    </linearGradient>
+    <linearGradient id="orbitStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7B8EFF" stop-opacity=".03"/>
+      <stop offset=".5" stop-color="#F9A5D0" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#FF873B" stop-opacity=".03"/>
+    </linearGradient>
+    <linearGradient id="glassFront" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity=".21"/>
+      <stop offset=".45" stop-color="#C7BEFF" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#FF8A77" stop-opacity=".24"/>
+    </linearGradient>
+    <linearGradient id="glassSide" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#98B5FF" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#FB6D8F" stop-opacity=".31"/>
+    </linearGradient>
+    <linearGradient id="memory" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B2CEFF"/>
+      <stop offset=".5" stop-color="#E5ADFF"/>
+      <stop offset="1" stop-color="#FF826A"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#BFCBFF" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="36"/></filter>
+    <filter id="bright"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="frame"><rect x="1" y="1" width="1198" height="458" rx="28"/></clipPath>
+  </defs>
+  <style>
+    @keyframes breath { 50% { opacity: .68; transform: scale(1.08); } }
+    @keyframes float { 50% { transform: translateY(-13px); } }
+    @keyframes revolve { to { transform: rotate(360deg); } }
+    @keyframes reverse-revolve { to { transform: rotate(-360deg); } }
+    @keyframes flash { 50% { opacity: .18; } }
+    @keyframes travel { to { stroke-dashoffset: -80; } }
+    @keyframes slide { 50% { transform: translateX(52px); opacity: .8; } }
+    .halo { transform-origin: 925px 220px; animation: breath 7s ease-in-out infinite; }
+    .memory-cube { animation: float 6s ease-in-out infinite; }
+    .ring-a { transform-origin: 930px 218px; animation: revolve 32s linear infinite; }
+    .ring-b { transform-origin: 930px 218px; animation: reverse-revolve 42s linear infinite; }
+    .ring-c { transform-origin: 930px 218px; animation: revolve 55s linear infinite; }
+    .star { animation: flash 3.8s ease-in-out infinite; }
+    .star:nth-of-type(2n) { animation-delay: -1.5s; }
+    .scan { stroke-dasharray: 2 14; animation: travel 4s linear infinite; }
+    .spark { animation: slide 5s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .halo,.memory-cube,.ring-a,.ring-b,.ring-c,.star,.scan,.spark { animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="1198" height="458" rx="28" fill="url(#background)" stroke="#7278BC" stroke-opacity=".5" stroke-width="2"/>
+  <g clip-path="url(#frame)">
+    <circle class="halo" cx="948" cy="220" r="300" fill="url(#coralGlow)"/>
+    <circle cx="723" cy="50" r="238" fill="url(#blueGlow)"/>
+    <path d="M550-40H1280V500H550Z" fill="url(#grid)" opacity=".68"/>
+    <path d="M-40 367C144 335 277 430 451 381S762 310 936 386s241-13 331-7" fill="none" stroke="#F16EAF" stroke-opacity=".13" stroke-width="2"/>
+    <path class="scan" d="M-40 367C144 335 277 430 451 381S762 310 936 386s241-13 331-7" fill="none" stroke="#F6AFD4" stroke-opacity=".65" stroke-width="2"/>
+    <path d="M0 422h1200" stroke="#A4B0FF" stroke-opacity=".15"/>
+    <path d="M73 68h56M73 68v22M1128 68h-56M1128 68v22M73 394h56M73 394v-22M1128 394h-56M1128 394v-22" fill="none" stroke="#BFC9FF" stroke-opacity=".42" stroke-width="2"/>
+
+    <circle class="star" cx="703" cy="112" r="2.5" fill="#FFFFFF"/>
+    <circle class="star" cx="1074" cy="99" r="3" fill="#FFD8A8"/>
+    <circle class="star" cx="1132" cy="245" r="2.4" fill="#E9D1FF"/>
+    <circle class="star" cx="764" cy="334" r="2.8" fill="#FFB7C6"/>
+    <circle class="star" cx="997" cy="56" r="1.7" fill="#FFFFFF"/>
+    <circle class="star" cx="595" cy="310" r="2" fill="#FFFFFF"/>
+    <path d="M1132 235v20m-10-10h20M703 104v16m-8-8h16" stroke="#FFFFFF" stroke-opacity=".38"/>
+
+    <g class="ring-a">
+      <ellipse cx="930" cy="218" rx="231" ry="83" transform="rotate(-25 930 218)" fill="none" stroke="url(#orbitStroke)" stroke-width="2"/>
+      <circle cx="718" cy="297" r="5" fill="#FF8B55"/>
+    </g>
+    <g class="ring-b">
+      <ellipse cx="930" cy="218" rx="167" ry="116" transform="rotate(39 930 218)" fill="none" stroke="#ADC2FF" stroke-opacity=".34" stroke-width="1.5"/>
+      <circle cx="831" cy="85" r="4" fill="#B8B9FF"/>
+    </g>
+    <g class="ring-c">
+      <circle cx="930" cy="218" r="145" fill="none" stroke="#FFD0AE" stroke-opacity=".18" stroke-dasharray="3 11" stroke-width="2"/>
+      <circle cx="1050" cy="300" r="5" fill="#FE80B2"/>
+    </g>
+
+    <g class="memory-cube">
+      <ellipse cx="931" cy="342" rx="125" ry="26" fill="#FD7098" opacity=".44" filter="url(#bright)"/>
+      <path d="M846 151l87-39 92 38-91 41Z" fill="#FAD8FF" fill-opacity=".13" stroke="#FCEAFF" stroke-opacity=".65" stroke-width="2"/>
+      <path d="M846 151l88 40v145l-88-41Z" fill="url(#glassSide)" stroke="#C5D3FF" stroke-opacity=".72" stroke-width="2"/>
+      <path d="M934 191l91-41v143l-91 43Z" fill="url(#glassFront)" stroke="#FFE0ED" stroke-opacity=".75" stroke-width="2"/>
+      <path d="M860 285c27-20 39-20 65-2l9 21 22-37c28-4 40 4 55 20v31l-77 35-74-35Z" fill="url(#memory)" fill-opacity=".86"/>
+      <path d="M864 271c27-19 50-10 69 13 26-32 53-27 76-12" fill="none" stroke="#FDF3FF" stroke-opacity=".92" stroke-width="3"/>
+      <circle cx="886" cy="242" r="4" fill="#FAD0FF"/>
+      <circle cx="915" cy="257" r="3" fill="#B5D7FF"/>
+      <circle cx="968" cy="232" r="5" fill="#FFF0CC"/>
+      <circle cx="997" cy="254" r="3" fill="#FFC8DB"/>
+      <path d="M846 151l88 40 91-41M934 191v145" fill="none" stroke="#FFFFFF" stroke-opacity=".32" stroke-width="1.5"/>
+      <path d="M870 177v78m13-72v50M1004 173v66" stroke="#FFFFFF" stroke-opacity=".19" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <circle cx="84" cy="77" r="5" fill="#FF8A57"/>
+    <circle cx="84" cy="77" r="10" fill="#FF8A57" opacity=".45" filter="url(#bright)"/>
+    <text x="101" y="82" fill="#E4E7FF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="4">CREATIVE SIGNAL / 001</text>
+    <text x="78" y="179" fill="url(#headline)" font-family="Arial, Helvetica, sans-serif" font-size="77" font-weight="800" letter-spacing="-3">HELLO,</text>
+    <text x="78" y="263" fill="url(#headline)" font-family="Arial, Helvetica, sans-serif" font-size="77" font-weight="800" letter-spacing="-3">I'M GEMOS.</text>
+    <path d="M81 290h397" stroke="#FA956E" stroke-width="3" stroke-linecap="round"/>
+    <text x="81" y="326" fill="#F5D6F0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" letter-spacing="1">Design × Code × Little Worlds</text>
+    <text x="81" y="361" fill="#C0CAE9" font-family="Arial, Helvetica, sans-serif" font-size="19">让一瞬间，拥有自己的宇宙。</text>
+    <rect x="80" y="410" width="284" height="2" fill="#BBC8FF" opacity=".18"/>
+    <rect class="spark" x="80" y="410" width="76" height="2" rx="1" fill="#FF8E59"/>
+    <text x="81" y="437" fill="#9FAED4" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3">DUODUOAIDUODUO · EST. IN CURIOSITY</text>
+    <text x="1085" y="430" fill="#BFC6E9" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2">01 / ∞</text>
+  </g>
+</svg>
