@@ -16,6 +16,32 @@
 
 <br />
 
+### ✦ Cosmic check-in / 小宇宙入境处
+
+<div align="center">
+
+<strong>你是第</strong>
+
+<br />
+
+<img src="https://count.getloli.com/@gemosdodo-github-profile?theme=capoo-2&padding=6&align=center&scale=1&pixelated=1&darkmode=0" width="360" alt="蓝色长猫展示 GemosDodo 主页累计访问次数" />
+
+<br />
+
+<strong>位误入小宇宙的旅人。</strong>
+
+<br /><br />
+
+<sub>猫猫负责记数，你负责随便逛逛。🐾</sub>
+
+<br />
+
+<sub>自 2026.09.30 起累计访问 · 重复访问也会计入 · <a href="https://github.com/journey-ad/Moe-Counter">Moe Counter</a></sub>
+
+</div>
+
+<br />
+
 ### ✦ Selected worlds / 精选小宇宙
 
 <img src="./assets/selected-worlds.svg" width="100%" alt="Three animated project cards: Gemos Still, Sharp-TD Bridge, and GemosDodo.art." />
